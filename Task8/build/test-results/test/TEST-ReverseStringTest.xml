@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReverseStringTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-12-08T10:07:42" hostname="DESKTOP-9F811CO" time="0.015">
+  <properties/>
+  <testcase name="reverseStringTest1()" classname="ReverseStringTest" time="0.013"/>
+  <testcase name="reverseStringTest2()" classname="ReverseStringTest" time="0.001"/>
+  <testcase name="reverseStringTest3()" classname="ReverseStringTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

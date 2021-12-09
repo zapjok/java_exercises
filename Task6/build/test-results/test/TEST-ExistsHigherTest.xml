@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ExistsHigherTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-12-08T07:45:34" hostname="DESKTOP-9F811CO" time="0.034">
+  <properties/>
+  <testcase name="[1] 23" classname="ExistsHigherTest" time="0.026"/>
+  <testcase name="[2] 2147483647" classname="ExistsHigherTest" time="0.001"/>
+  <testcase name="[1] 22" classname="ExistsHigherTest" time="0.001"/>
+  <testcase name="[2] 2" classname="ExistsHigherTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

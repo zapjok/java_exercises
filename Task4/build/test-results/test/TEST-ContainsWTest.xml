@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContainsWTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-12-08T07:57:11" hostname="DESKTOP-9F811CO" time="0.038">
+  <properties/>
+  <testcase name="[1] w3resource" classname="ContainsWTest" time="0.027"/>
+  <testcase name="[2] w3wresource" classname="ContainsWTest" time="0.0"/>
+  <testcase name="[3] w3reswourcew" classname="ContainsWTest" time="0.001"/>
+  <testcase name="[1] " classname="ContainsWTest" time="0.001"/>
+  <testcase name="[2] 3resource" classname="ContainsWTest" time="0.001"/>
+  <testcase name="[3] 123456" classname="ContainsWTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MinMaxTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-12-08T11:01:08" hostname="DESKTOP-9F811CO" time="0.024">
+  <properties/>
+  <testcase name="minAndMaxTest1()" classname="MinMaxTest" time="0.019"/>
+  <testcase name="minAndMaxTest2()" classname="MinMaxTest" time="0.001"/>
+  <testcase name="minAndMaxTest3()" classname="MinMaxTest" time="0.001"/>
+  <testcase name="minAndMaxTest4()" classname="MinMaxTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

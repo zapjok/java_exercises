@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CheckPerfectTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-12-09T12:22:52" hostname="DESKTOP-9F811CO" time="0.039">
+  <properties/>
+  <testcase name="[1] 12" classname="CheckPerfectTest" time="0.03"/>
+  <testcase name="[2] 97" classname="CheckPerfectTest" time="0.001"/>
+  <testcase name="[1] 6" classname="CheckPerfectTest" time="0.001"/>
+  <testcase name="[2] 28" classname="CheckPerfectTest" time="0.0"/>
+  <testcase name="[3] 496" classname="CheckPerfectTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

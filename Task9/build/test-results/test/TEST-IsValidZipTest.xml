@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IsValidZipTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-12-08T10:24:53" hostname="DESKTOP-9F811CO" time="0.046">
+  <properties/>
+  <testcase name="[1] 853a7" classname="IsValidZipTest" time="0.032"/>
+  <testcase name="[2] 732 32" classname="IsValidZipTest" time="0.0"/>
+  <testcase name="[3] 393939" classname="IsValidZipTest" time="0.001"/>
+  <testcase name="[1] 59001" classname="IsValidZipTest" time="0.001"/>
+  <testcase name="[2] 12345" classname="IsValidZipTest" time="0.001"/>
+  <testcase name="[3] 99999" classname="IsValidZipTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
