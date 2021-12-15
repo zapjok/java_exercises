@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NameGameTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-12-14T13:04:18" hostname="DESKTOP-9F811CO" time="0.018">
+  <properties/>
+  <testcase name="nameScoreTestNotGood()" classname="NameGameTest" time="0.015"/>
+  <testcase name="nameScoreTestPretty()" classname="NameGameTest" time="0.001"/>
+  <testcase name="nameScoreTestBest()" classname="NameGameTest" time="0.001"/>
+  <testcase name="nameScoreTestVery()" classname="NameGameTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
