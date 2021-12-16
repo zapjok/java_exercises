@@ -7,6 +7,7 @@ public class CheckPerfect {
             if (toCheckNum % i == 0) factors.add(i);
         }
         // Perfect :)
+        // Thanks!
         return toCheckNum == factors.stream().mapToInt(Integer::intValue).sum();
     }
 }

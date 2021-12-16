@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         MinMax minmax = new MinMax();
-        int[] sampleArray = {23,45,56,47,567567,-654654};
+        int[] sampleArray = {1, 2, 3, 4, 5};
         System.out.println("Array: " + Arrays.toString(sampleArray) + "\nMin and Max values are:" + Arrays.toString(minmax.minAndMax(sampleArray)));
 
     }

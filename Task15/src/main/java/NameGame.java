@@ -54,11 +54,20 @@ public class NameGame {
         char[] inputChars = input.toCharArray();
         for (char actual : inputChars) {
             // Can be confusing
+            // Tha naming convention or the algorithm, choosen objects?
             score += scoreTable.get(actual+"");
         }
-        if (score <= 60) return "NOT TOO GOOD";
-        else if (score <= 300) return "PRETTY GOOD";
-        else if (score <= 599) return "VERY GOOD";
-        else return "THE BEST";
+        if (score <= 60) {
+            return "NOT TOO GOOD";
+        }
+        else if (score <= 300) {
+            return "PRETTY GOOD";
+        }
+        else if (score <= 599) {
+            return "VERY GOOD";
+        }
+        else {
+            return "THE BEST";
+        }
     }
 }
