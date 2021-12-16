@@ -8,6 +8,7 @@ Sample Output: True
 public class ContainsW {
     public boolean containsw (String word) {
         char[] wordChars = word.toCharArray();
+        // It can be an integer int numberOfW = 0;
         byte numberOfW = 0;
         for (char actualChar : wordChars) {
             if (actualChar == 'w') numberOfW++;

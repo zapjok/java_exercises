@@ -6,6 +6,7 @@ public class CheckPerfect {
         for (int i = toCheckNum - 1; i > 0; i--) {
             if (toCheckNum % i == 0) factors.add(i);
         }
+        // Perfect :)
         return toCheckNum == factors.stream().mapToInt(Integer::intValue).sum();
     }
 }

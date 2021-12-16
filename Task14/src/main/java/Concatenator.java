@@ -14,6 +14,7 @@ You can expect all the tests to have valid chords.
  */
 public class Concatenator {
     public String[] jazzify (String[] input) {
+        // It's null not empty
         if (input == null) return input;
         else {
             for (int i = 0; i < input.length; i++) {

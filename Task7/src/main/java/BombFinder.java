@@ -11,9 +11,10 @@ Notes
 The string
  */
 public class BombFinder {
-    public String bombFinder (String sentence) {
+    public String bombFinder(String sentence) {
         String[] words = sentence.split(" ");
         for (String word : words) {
+            // why not use contains?
             if (word.toLowerCase().matches("(\\W?)bomb(\\W?)")) return "DUCK!";
         }
         return "Relax, there's no bomb.";

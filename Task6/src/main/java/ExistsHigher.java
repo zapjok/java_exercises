@@ -1,5 +1,6 @@
 public class ExistsHigher {
-    public boolean existsHigher(int[] Array, int bottomLimit){
+    // lowercase char array
+    public boolean existsHigher(int[] Array, int bottomLimit) {
         for (int actualNumber : Array) {
             if (actualNumber >= bottomLimit) return true;
         }

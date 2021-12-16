@@ -53,6 +53,7 @@ public class NameGame {
         );
         char[] inputChars = input.toCharArray();
         for (char actual : inputChars) {
+            // Can be confusing
             score += scoreTable.get(actual+"");
         }
         if (score <= 60) return "NOT TOO GOOD";
