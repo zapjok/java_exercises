@@ -28,11 +28,24 @@ public class Youtuber {
             return "Nothing";
         }
         else {
+            /*
+            Decision Table
+actualState / finalState
+dislike     / like       finalState = actual
+like        / dislike 	 finalState = actual
+
+dislike     / nothing    finalState = actual
+like        / nothing 	 finalState = actual
+
+dislike     / dislike    finalState = "Nothing"
+like        / like       finalState = "Nothing"
+            */
             for (String actualState: buttonInputs) {
-                if ((actualState != finalState) || (finalState == "Nothing")) {
-                    finalState = actualState;
-                } else {
+                if ( actualState == finalState ) {
                     finalState = "Nothing";
+                }
+                else {
+                    finalState = actualState;
                 }
             }
             return finalState;
