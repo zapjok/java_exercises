@@ -1,3 +1,9 @@
+import medium2.task1.CountSum;
+import medium2.task2.Zipper;
+import medium2.task3.BoolBit;
+import medium2.task4.RemoveReChar;
+import medium2.task5.Youtuber;
+import medium2.task6.OddReverser;
 import task10.MinMax;
 import task11.CheckPerfect;
 import task12.War;
@@ -73,6 +79,29 @@ public class Main {
         System.out.println("Task15");
         NameGame namegame = new NameGame();
         System.out.println(namegame.nameScore("PUBG"));
-
+        //Medium 2 - Task 1
+        System.out.println("Medium 2 - Task 1");
+        CountSum counts = new CountSum();
+        System.out.println(Arrays.toString(counts.countPositivesSumNegatives(new int[] {92, 6, 73, -77, 81, -90, 99, 8, -85, 34})));
+        //Medium 2 - Task 2
+        System.out.println("Medium 2 - Task 2");
+        Zipper zip = new Zipper();
+        System.out.println(Arrays.deepToString(zip.zipIt(new String[] {"Ana", "Amy", "Lisa"}, new String[] {"Bob", "Josh", "Tim"})));
+        //Medium 2 - Task 3
+        System.out.println("Medium 2 - Task 3");
+        BoolBit bolbi = new BoolBit();
+        System.out.println(Arrays.toString(bolbi.toBoolArray(bolbi.toBitString("tesh"))));
+        //Medium 2 - Task 4
+        System.out.println("Medium 2 - Task 4");
+        RemoveReChar remover = new RemoveReChar();
+        System.out.println(remover.unrepeated("WWWEEE!"));
+        //Medium 2 - Task 5
+        System.out.println("Medium 2 - Task 5");
+        Youtuber tuber = new Youtuber();
+        System.out.println(tuber.likeOrDislike(new String[] {"Like", "Dislike", "Dislike"}));
+        //Medium 2 - Task 6
+        System.out.println("Medium 2 - Task 6");
+        OddReverser odder = new OddReverser();
+        System.out.println(odder.reverseOdd("Make sure uoy only esrever sdrow of ddo length"));
     }
 }
