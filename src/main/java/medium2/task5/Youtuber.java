@@ -41,7 +41,7 @@ dislike     / dislike    finalState = "Nothing"
 like        / like       finalState = "Nothing"
             */
             for (String actualState: buttonInputs) {
-                if ( actualState == finalState ) {
+                if ( actualState.equals(finalState) ) {
                     finalState = "Nothing";
                 }
                 else {
