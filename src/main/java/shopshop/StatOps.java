@@ -11,7 +11,7 @@ public class StatOps {
     public int firstTime(String item, String fileContent) {
         String[] purchases = fileContent.split(",F,");
         for (int i = 0; i < purchases.length; i++) {
-            if (purchases[i].contains(item)) {
+            if (purchases[i].matches(".*\\W*" + item + ".*\\W*")) {
                 return i+1;
             }
         }
@@ -20,7 +20,7 @@ public class StatOps {
     public int lastTime(String item, String fileContent) {
         String[] purchases = fileContent.split(",F,");
         for (int i = purchases.length-1; i > 0; i--) {
-            if (purchases[i].contains(item)) {
+            if (purchases[i].matches(".*\\W*" + item + "\\W*.*")) {
                 return i+1;
             }
         }
@@ -31,7 +31,7 @@ public class StatOps {
         String[] purchases = fileContent.split(",F,");
         String[] contOfOnePurchase;
         for (int i = 0; i < purchases.length; i++) {
-            if (purchases[i].length() == 1 && purchases[i].contains(item)) {
+            if (purchases[i].length() == 1 && purchases[i].equalsIgnoreCase(item)) {
                 sumOfItem++;
             }
             else if (purchases[i].length() > 1){
@@ -51,18 +51,13 @@ public class StatOps {
         String[] contOfOnePurchase = purchases[purchNum-1].split(",");
         String returnString = new String();
         HashMap<String, Integer> itemsCount = new HashMap<>();
-        if (contOfOnePurchase.length == 1) {
-            return "There is only 1 item:" + contOfOnePurchase[0];
-        }
-        else {
-            for (String actualItem : contOfOnePurchase) {
-                if (itemsCount.containsKey(actualItem)) {
-                    itemsCount.put(actualItem, itemsCount.get(actualItem) + 1);
+        for (String actualItem : contOfOnePurchase) {
+            if (itemsCount.containsKey(actualItem)) {
+                itemsCount.put(actualItem, itemsCount.get(actualItem) + 1);
                 }
                 else {
                     itemsCount.put(actualItem, 1);
                 }
-            }
         }
         returnString = itemsCount.keySet().stream()
                 .map(key -> key + ":" + itemsCount.get(key))

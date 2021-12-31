@@ -1,5 +1,6 @@
 package shopshop;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Input {
@@ -18,7 +19,7 @@ public class Input {
                 if (scannedInt < 0) {
                     System.out.println("Please enter 0 or a positive value.");
                 }
-            } catch (java.util.InputMismatchException e) {
+            } catch (InputMismatchException e) {
                 scanner.nextLine();
                 System.out.println("Invalid type of input. Please enter whole number / integer.");
             }

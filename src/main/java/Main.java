@@ -110,7 +110,7 @@ public class Main {
         System.out.println("----------------Shop Shop Challenges----------------");
         //Task 2
         FileOps reader = new FileOps();
-        String fileContent = reader.fileToString("src/main/java/shopshop/penztar.txt");
+        String fileContent = reader.fileToString("src/main/resources/penztar.txt");
         System.out.println("Task 2 - Read the content of File. Content:");
         System.out.println(fileContent);
         //Task 3
@@ -131,6 +131,6 @@ public class Main {
         System.out.println(statter.getPurchase(inputter.getInt("Please enter the purchase number:"),fileContent));
         //Task 8
         System.out.println("Task 8 Sum of the buys in a File");
-        statter.sumAndToFile(fileContent, "src/main/java/shopshop/sum.txt");
+        statter.sumAndToFile(fileContent, "src/main/resources/sum.txt");
     }
 }

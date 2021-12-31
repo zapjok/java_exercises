@@ -11,6 +11,11 @@ public class ZipperTest {
         String[] testArray1 = {"Ana", "Amy", "Lisa"};
         String[] testArray2 = {"Bob", "Josh"};
         Zipper zip = new Zipper();
+        try {
+            Thread.sleep(15000);  //jenkins miatt
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         Assertions.assertArrayEquals(null,zip.zipIt(testArray2,testArray1));
     }
     @Test
