@@ -4,6 +4,9 @@ import medium2.task3.BoolBit;
 import medium2.task4.RemoveReChar;
 import medium2.task5.Youtuber;
 import medium2.task6.OddReverser;
+import shopshop.FileOps;
+import shopshop.Input;
+import shopshop.StatOps;
 import task10.MinMax;
 import task11.CheckPerfect;
 import task12.War;
@@ -103,5 +106,31 @@ public class Main {
         System.out.println("Medium 2 - Task 6");
         OddReverser odder = new OddReverser();
         System.out.println(odder.reverseOdd("Make sure uoy only esrever sdrow of ddo length"));
+        //-------------Shop-shop
+        System.out.println("----------------Shop Shop Challenges----------------");
+        //Task 2
+        FileOps reader = new FileOps();
+        String fileContent = reader.fileToString("src/main/resources/penztar.txt");
+        System.out.println("Task 2 - Read the content of File. Content:");
+        System.out.println(fileContent);
+        //Task 3
+        StatOps statter = new StatOps();
+        System.out.println("Task 3 - How many times did the customers pay in the shop?");
+        System.out.println(statter.sumOfPaysInFile(fileContent));
+        //Task 4,5
+        System.out.println("Task 4,5");
+        Input inputter = new Input();
+        String item = inputter.getItemName();
+        System.out.println("The entered item is :" + item);
+        System.out.println("The item was first bought in purchase #" + statter.firstTime(item, fileContent));
+        System.out.println("The item was last bought in purchase #" + statter.lastTime(item, fileContent));
+        System.out.println("The item was bought " + statter.countOfItem(item, fileContent)+ " times until now.");
+        //Task 6
+        //Task 7 Details of Purchase number
+        System.out.println("Task 7 Details of Purchase number");
+        System.out.println(statter.getPurchase(inputter.getInt("Please enter the purchase number:"),fileContent));
+        //Task 8
+        System.out.println("Task 8 Sum of the buys in a File");
+        statter.sumAndToFile(fileContent, "src/main/resources/sum.txt");
     }
 }
