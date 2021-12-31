@@ -31,7 +31,7 @@ public class StatOps {
         String[] purchases = fileContent.split(",F,");
         String[] contOfOnePurchase;
         for (int i = 0; i < purchases.length; i++) {
-            if (purchases[i].length() == 1 && purchases[i].equalsIgnoreCase(item)) {
+            if (purchases[i].length() == 1 && purchases[i].contains(item)) {
                 sumOfItem++;
             }
             else if (purchases[i].length() > 1){
