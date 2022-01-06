@@ -4,7 +4,6 @@ import medium2.task3.BoolBit;
 import medium2.task4.RemoveReChar;
 import medium2.task5.Youtuber;
 import medium2.task6.OddReverser;
-import oop.task1.Employee;
 import shopshop.FileOps;
 import shopshop.Input;
 import shopshop.StatOps;
@@ -133,17 +132,5 @@ public class Main {
         //Task 8
         System.out.println("Task 8 Sum of the buys in a File");
         statter.sumAndToFile(fileContent, "src/main/resources/sum.txt");
-        //OOP - TASK 1
-        System.out.println("OOP TASK 1");
-        Employee johnSnow = new Employee("John", "Snow", 1000.0);
-        Employee ariaStark = new Employee("Aria", "Stark", 1500.0);
-        System.out.println("The yearly salary of " +
-                johnSnow.getFirstName() + " " + johnSnow.getLastName() + " is: " + johnSnow.getSalary());
-        johnSnow.setSalary(johnSnow.getSalary() + (johnSnow.getSalary()*0.1));
-        System.out.println("The new salary after the pay raise is: " + johnSnow.getSalary());
-        System.out.println("The yearly salary of " +
-                ariaStark.getFirstName() + " " + ariaStark.getLastName() + " is: " + ariaStark.getSalary());
-        ariaStark.setSalary(ariaStark.getSalary() + (ariaStark.getSalary()*0.1));
-        System.out.println("The new salary after the pay raise is: " + ariaStark.getSalary());
     }
 }
